@@ -2844,7 +2844,7 @@ function WordList() {
       && (!q || w.w.includes(q) || w.s.some(s => s.includes(q)) || (qn && norm(w.p).includes(qn))));
     // 3급 새 뜻(1·2급 단어가 3급에서 얻는 뜻, w.x)은 새 단어가 아니라서 따로 센다 → 전체 1000개 + 새 뜻 7개
     const ext = rows.filter(w => w.x).length;
-    info.textContent = `단어 ${rows.length - ext}개` + (ext ? ` + 이미 배운 단어의 3급 새 뜻 ${ext}개` : "");
+    info.textContent = `단어 ${rows.length - ext}개` + (ext ? ` + 3급 새 뜻 ${ext}개` : "");
     fill(list, rows.map(w => {
       const li = el("li");
       const row = el("button", { class: "wrow", onclick: () => {
