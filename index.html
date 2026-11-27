@@ -1712,9 +1712,10 @@ function Home() {
     main = el("div", { class: "card todaycard" },
       el("div", { class: "td" }, "어디서부터 시작할까요?"),
       el("button", { class: "btn mt8", onclick: () => pickFrom(1) }, "처음이에요", el("small", { class: "bsub" }, "1급부터")),
-      el("button", { class: "btn ghost mt8", onclick: () => pickFrom(2) }, "1급은 알아요", el("small", { class: "bsub" }, "2급부터")),
-      el("button", { class: "btn ghost mt8", onclick: () => pickFrom(3) }, "2급까지 알아요", el("small", { class: "bsub" }, "3급부터")),
-      el("p", { class: "note", style: "margin:12px 0 0;color:var(--muted)" }, "건너뛴 단어도 단어장에서 볼 수 있어요. ⚙ 설정에서 바꿀 수 있어요."));
+      // 11/27 사용자: 급수로는 스스로 판단하기 어렵다 → 배운 적 있으면 단어 시험으로 아는 단어를 거른다 (급수 건너뛰기는 설정에만)
+      el("button", { class: "btn ghost mt8", onclick: () => { S.from = 1; S.fromSet = true; applyFrom(); save(); startMode("drill"); } },
+        "배운 적 있어요", el("small", { class: "bsub" }, "단어 시험으로 아는 단어 거르기")),
+      el("p", { class: "note", style: "margin:12px 0 0;color:var(--muted)" }, "시험에서 모른 단어만 새 단어로 배워요. 급수를 통째로 건너뛰려면 ⚙ 설정의 '시작 급수'에서 바꿀 수 있어요."));
   } else if (S.from > 1 && S.range === "all" && !S.chk && placeWords().length) {
     // 시작 급수를 건너뛰면 처음 한 번 빠른 점검 (10/31)
     const nm = skipName(), pw = placeWords().length;
