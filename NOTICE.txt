@@ -1,0 +1,9 @@
+HSK 1~3급 단어 — 저작권·라이선스 고지
+
+© 2026 小喜 (샤오시). 이 앱의 한국어 뜻·예문·문제·문법 설명과 화면 디자인(index.html, data/words.js, data/grammar.js, data/qa.js, data/order.js)은 小喜(샤오시)의 저작물입니다. 개인 학습 외의 복제·배포·판매에는 허락이 필요합니다.
+
+단어·한자·문법 목록: 신HSK(3.0) 공식 요강 《国际中文教育中文水平等级标准》 1~3급 (中外语言交流合作中心). HSK는 汉考国际(CTI)의 상표이며 이 앱은 시험 주관 기관과 관계없는 개인 학습 도구입니다.
+
+제3자 구성 요소
+- lib/hanzi-writer.min.js — Hanzi Writer v3.7.2, MIT License, Copyright (c) 2014 David Chanin. 전문: lib/hanzi-writer-LICENSE.txt
+- data/strokes.js — hanzi-writer-data 2.0.1 (Make Me a Hanzi 프로젝트가 Arphic Technology 글꼴에서 추출한 획 데이터) 중 1·2급 书写字 100자를 추려 담은 파생 데이터. Arphic Public License, Copyright (C) 1999 Arphic Technology Co., Ltd. 이 파일은 같은 라이선스 조건으로 재배포할 수 있습니다. 전문: lib/hanzi-writer-data-ARPHICPL.txt

@@ -1,0 +1,13 @@
+# 공개 저장소에는 앱이 열리는 데 필요한 파일만 올린다
+# (공부 기록·요강 PDF·엑셀·제작 도구·시안은 이 컴퓨터에만 둔다)
+/*
+!/.gitignore
+!/index.html
+!/sw.js
+!/manifest.webmanifest
+!/NOTICE.txt
+!/icon-32.png
+!/icon-180.png
+!/icon-512.png
+!/data/
+!/lib/
